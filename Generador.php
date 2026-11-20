@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <?php if ($claveGenerada !== ""): ?>
         <p><strong>Clave generada:</strong> <?php echo $claveGenerada; ?></p>
-    <?php endif; ?>
+    <?php endif ; ?>
 </body>
 </html>
 ?>
