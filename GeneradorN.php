@@ -44,3 +44,10 @@ function generarUsuario($nombre, $institucion, $anioIngreso) {
     
     return $parteNombre . $parteInstitucion . $parteAnio;
 }
+
+$usuarioGenerado = "";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nombre = $_POST["nombre"] ?? "";
+    $institucion = $_POST["institucion"] ?? "";
+    $anio = $_POST["anio"] ?? "";
+    $usuarioGenerado = generarUsuario($nombre, $institucion, $anio);
